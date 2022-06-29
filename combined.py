@@ -13,7 +13,7 @@ from adafruit_ina219 import ADCResolution, BusVoltageRange, INA219
 i2c = busio.I2C(board.SCL, board.SDA)
 i2c_bus = board.I2C()
 ina219A = INA219(i2c_bus, 0x40)
-ina219B = INA219(i2c_bus, 0x41)
+ina219B = INA219(i2c_bus, 0x44)
 ina219C = INA219(i2c_bus, 0x45)
 mcp = adafruit_mcp9808.MCP9808(i2c)
 
