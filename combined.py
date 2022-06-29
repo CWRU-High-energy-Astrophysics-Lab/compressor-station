@@ -57,9 +57,9 @@ while timeleft>0:
     print("Power Register C : {:6.3f}   W".format(powerC))
     print("")
     csvWriter.writerow([tempC,"C"])
-    csvWriter.writerow(["Voltage A (bus&shunt) :",bus_voltageA,"V" shunt_voltageA,"V", "Power Calc.:",bus_voltageA * (currentA / 1000),"W", "Power register:",powerA, "W"])
-    csvWriter.writerow(["Voltage B (bus&shunt) :",bus_voltageB,"V" shunt_voltageB,"V", "Power Calc.:",bus_voltageB * (currentB / 1000),"W", "Power register:",powerB, "W"])
-    csvWriter.writerow(["Voltage C (bus&shunt) :",bus_voltageC,"V" shunt_voltageC,"V", "Power Calc.:",bus_voltageC * (currentC / 1000),"W", "Power register:",powerC, "W"])
+    csvWriter.writerow(["Voltage A (bus&shunt) :",bus_voltageA,"V" shunt_voltageA,"V", "Power Calc. A :",bus_voltageA * (currentA / 1000),"W", "Power registerA :",powerA, "W"])
+    csvWriter.writerow(["Voltage B (bus&shunt) :",bus_voltageB,"V" shunt_voltageB,"V", "Power Calc. B :",bus_voltageB * (currentB / 1000),"W", "Power registerB :",powerB, "W"])
+    csvWriter.writerow(["Voltage C (bus&shunt) :",bus_voltageC,"V" shunt_voltageC,"V", "Power Calc. C :",bus_voltageC * (currentC / 1000),"W", "Power registerC :",powerC, "W"])
     time.sleep(2)
     timeleft=timeleft-2
     while timeleft<=0:
@@ -97,8 +97,8 @@ while timeleft>0:
         print("Power Register C : {:6.3f}   W".format(powerC))
         print("")
         csvWriter.writerow([tempC,"C"])
-        csvWriter.writerow(["Voltage A (bus&shunt) :",bus_voltageA,"V" shunt_voltageA,"V", "Power Calc.:",bus_voltageA * (currentA / 1000),"W", "Power register:",powerA, "W"])
-        csvWriter.writerow(["Voltage B (bus&shunt) :",bus_voltageB,"V" shunt_voltageB,"V", "Power Calc.:",bus_voltageB * (currentB / 1000),"W", "Power register:",powerB, "W"])
-        csvWriter.writerow(["Voltage C (bus&shunt) :",bus_voltageC,"V" shunt_voltageC,"V", "Power Calc.:",bus_voltageC * (currentC / 1000),"W", "Power register:",powerC, "W"])
+        csvWriter.writerow(["Voltage A (bus&shunt) :",bus_voltageA,"V" shunt_voltageA,"V", "Power Calc.A :",bus_voltageA * (currentA / 1000),"W", "Power registerA :",powerA, "W"])
+        csvWriter.writerow(["Voltage B (bus&shunt) :",bus_voltageB,"V" shunt_voltageB,"V", "Power Calc.B :",bus_voltageB * (currentB / 1000),"W", "Power registerB :",powerB, "W"])
+        csvWriter.writerow(["Voltage C (bus&shunt) :",bus_voltageC,"V" shunt_voltageC,"V", "Power Calc.C :",bus_voltageC * (currentC / 1000),"W", "Power registerC :",powerC, "W"])
         time.sleep(2)
         timeleft=timeleft+1800
